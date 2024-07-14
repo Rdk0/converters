@@ -15,7 +15,7 @@ func main(){
 		if err != nil {
 			fmt.Printf("an error occuried %v: ", err)
 		}
-    deltG = -0.59574*math.Log(ic50/1e9)
+        deltG = -0.59574*math.Log(ic50/1e9)
 	nonHatoms = mw/13.286
 	le = deltG/nonHatoms
 	fmt.Printf("for IC50 = %0.1f nM, deltaG = -%0.2f kcal/mol \n\n", ic50, deltG)
